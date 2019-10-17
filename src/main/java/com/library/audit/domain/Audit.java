@@ -1,8 +1,6 @@
-package com.library.card.domain;
+package com.library.audit.domain;
 
-import com.library.card.helpers.Util;
-
-public class Transaction {
+public class Audit {
 	private String id;
 	
 	private String orderId;
@@ -13,11 +11,11 @@ public class Transaction {
 	
 	private String creationDate;
 	
-	public Transaction(String orderId, String userId, String creditCardLastFour) {
+	public Audit(String orderId, String userId, String creditCardLastFour, String creationDate) {
 		this.orderId = orderId;
 		this.userId = userId;
 		this.creditCardLastFour = creditCardLastFour;
-		this.creationDate = Util.getCurrentDateTime();
+		this.creationDate = creationDate;
 	}
 
 	public String getId() {

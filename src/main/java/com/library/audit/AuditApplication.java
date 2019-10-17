@@ -1,4 +1,4 @@
-package com.library.card;
+package com.library.audit;
 
 //import java.io.IOException;
 //import java.net.URI;
@@ -16,10 +16,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CreditCardApplication {
+public class AuditApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CreditCardApplication.class, args);
+		SpringApplication.run(AuditApplication.class, args);
 	}
 
 //    @GetMapping("/test-curl")
