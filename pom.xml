@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>mock-audit-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>mock-audit-api</name>
+	<description>Mock Spring Boot audit API for a library application</description>
 
 	<properties>
 		<java.version>1.8</java.version>

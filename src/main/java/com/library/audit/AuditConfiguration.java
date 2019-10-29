@@ -20,7 +20,7 @@ public class AuditConfiguration {
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)  
           .select()                                  
-          .apis(RequestHandlerSelectors.basePackage("com.library.card.rest"))              
+          .apis(RequestHandlerSelectors.basePackage("com.library.audit.rest"))              
           .paths(PathSelectors.regex("/.*"))                      
           .build()
           .apiInfo(apiEndPointsInfo());                                           
@@ -28,8 +28,8 @@ public class AuditConfiguration {
 	
 	private ApiInfo apiEndPointsInfo() {
 
-        return new ApiInfoBuilder().title("Mock API de transações com cartão de crédito")
-                .description("Spring boot REST API para simulação de criação de transações via cartão de créditor"
+        return new ApiInfoBuilder().title("Mock API de auditoria de transações")
+                .description("Spring boot REST API para auditoria de transações com cartão de crédito"
                 		+ "\n\nAPI implementada como parte da disciplina de Arquitetura de Backend e Microsserviços do curso de pós-graduação em Arquitetura de Software Distribuído da PUC Minas.")
                 .contact(new Contact("Jonas Castanheira", "https://github.com/jonasrc", "jonasrcastanheira@gmail.com"))
                 .license("Apache 2.0")
